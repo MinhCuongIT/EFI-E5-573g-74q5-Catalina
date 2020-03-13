@@ -18,6 +18,6 @@
 
 ### Things NOT working
 - Some controls (like the fn + arrows for screen brightness)
-- GPU (you should disable it in the first boot, in the advanced Bios: fn + tab 3 times, then reboot again in bios mode, and voìla)
+- GPU on MacOS, but you can use it normally on Ubuntu and/or Windows (you should disable it in the first mac boot, in the advanced Bios: fn + tab 3 times, then reboot again in bios mode, and voìla. Remember to re-enable it if you want to use it in other systems)
 - The dual core i7 processor looks like turned into a celeron, the performance is capped by half or more.
 - Some minor things i dont remember now.
