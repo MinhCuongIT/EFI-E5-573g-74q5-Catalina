@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KernelAndKextPatches</key>
+	<dict>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2CController</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable PCI power management if there is no such code in DSDT, 10.9.*, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dU1Ii7voAQAA
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				601Ii7voAQAA
+				</data>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
