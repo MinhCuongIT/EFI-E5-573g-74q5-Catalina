@@ -2,7 +2,7 @@
 
 #### Efi folder for the Acer E5 573G 74Q5 Laptop running MacOS Catalina 10.15 and Ubuntu 19.10 in Dual Boot
 
-()[./doc/ACER.jpg]
+[](./doc/ACER.jpg)
 
 ### Specs
 - Intel Core i7 5500u
